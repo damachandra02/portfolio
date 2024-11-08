@@ -10,7 +10,7 @@ const Header = () => {
 const [navOpen, setNavOpen] = useState(true);
 
   return (
-    <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900/90 to-transparent backdrop-blur-md shadow-lg">
+    <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-transparent backdrop-blur-md shadow-lg">
     <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
         {/* Logo with soft glow effect */}
         <h1>
@@ -20,13 +20,13 @@ const [navOpen, setNavOpen] = useState(true);
                     width={40} 
                     height={40} 
                     alt="Homepage of Damachandra N" 
-                    className="rounded-full shadow-lg hover:shadow-[0px_0px_8px_2px_rgba(255,255,255,0.6)] transition-shadow duration-300" 
+                    className="rounded-full shadow-lg hover:shadow-[0px_0px_8px_2px_rgba(255,255,255,0.6)] transition-shadow duration-300 style={{ backgroundColor: 'white' }}" 
                 />
             </a>
         </h1>
 
         {/* Centered navigation/menu button area */}
-        <div className="relative flex md:justify-self-center">
+        <div className="relative md:justify-self-center">
             <button 
                 className="menu-btn md:hidden p-2 rounded-full transition duration-300 hover:bg-white/10"
                 aria-label="Toggle menu"
