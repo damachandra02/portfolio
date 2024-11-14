@@ -1,7 +1,7 @@
 import React from 'react'
 
 //* Components
- import { ButtonPrimary } from './Button'; 
+ import { ButtonPrimary, ButtonOutline } from './Button'; 
 
 const Hero = () => {
   return (
@@ -40,7 +40,11 @@ const Hero = () => {
                  icon="download"
                 />
                 
-                ButtonOutline
+                <ButtonOutline 
+                  href="#about"
+                  label="Scroll Down"
+                  icon={"arrow_downward"}
+                />
             </div>
         </div>
 
